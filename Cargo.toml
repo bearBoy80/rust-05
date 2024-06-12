@@ -2,6 +2,7 @@
 members = ["chat-core", "chat-server", "chat-test", "notify-server"]
 resolver = "2"
 [workspace.dependencies]
+chat-core = { path = "./chat-core" }
 anyhow = "1.0.86"
 jwt-simple = "0.12.9"
 axum = {version ="0.7.5",features =["http2","query","tracing","multipart"]}
